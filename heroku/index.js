@@ -14,10 +14,10 @@ var xhub = require('express-x-hub');
 app.set('port', (process.env.PORT || 5000));
 app.listen(app.get('port'));
 
-app.use(xhub({ algorithm: 'sha1', secret: process.env.APP_SECRET }));
+app.use(xhub({ algorithm: 'sha1', secret: process.env.c2fef1c63f9873c6b4a6ef060db8d3a0 }));
 app.use(bodyParser.json());
 
-var token = process.env.TOKEN || 'token';
+var token = process.env.TOKEN || '64473ceaafc3d87949a6b6eaf30e4ae5';
 var received_updates = [];
 
 app.get('/', function(req, res) {
